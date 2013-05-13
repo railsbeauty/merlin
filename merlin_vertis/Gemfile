@@ -21,6 +21,15 @@ group :assets do
 end
 
 gem 'jquery-rails'
+platforms :ruby do
+  gem 'json'
+end
+
+platforms :mswin, :mingw do
+  gem 'json_pure'
+end 
+
+gem 'devise'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
